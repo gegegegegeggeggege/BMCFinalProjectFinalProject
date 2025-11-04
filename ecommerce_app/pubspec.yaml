@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.9.2
+  sdk: ^3.8.1
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -34,9 +34,11 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  firebase_core: ^4.2.0
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.7.0
+  cloud_firestore: ^5.4.4
+  provider: ^6.1.5+1
   flutter_native_splash: 2.4.0
-  firebase_auth: ^6.1.1
 
 dev_dependencies:
   flutter_test:
@@ -59,31 +61,30 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  # Add this block to register your assets folder
   assets:
-    - assets/images/
+    - assets/images/splash_logo.png
 
-
-# 1. Add this new section at the end of the file
+# Add this new section at the end of the file
 flutter_native_splash:
 
-  # 2. Set the background color of your splash screen
-  color: "#FFFFFF" # This is white
+  # Set the background color of your splash screen
+  color: "FFFFFF" # This is white
 
-  # 3. Point to your splash logo file
+  # Point to your splash logo file
   image: assets/images/splash_logo.png
 
-  # 4. Configuration for the Android splash screen
+  # Configuration for the Android splash screen
   android_12:
     color: "#FFFFFF"
     image: assets/images/splash_logo.png
 
-  # 5. Configuration for the web splash screen
+  #  Configure for the web splash screen
 
-  # Web: only supports `true` (boolean), no image/color override
+  # Web: only supports 'true' (boolean), no image/color override
 
   web: true
-
-
 
   # To add assets to your application, add an assets section, like this:
   # assets:
