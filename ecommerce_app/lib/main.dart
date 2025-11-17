@@ -10,7 +10,7 @@ import 'package:google_fonts/google_fonts.dart'; // 1. ADD THIS IMPORT
 // 2. --- ADD OUR NEW APP COLOR PALETTE ---
 // Pink Art & Craft Store color palette
 const Color kRichBlack = Color(0xFF1D1F24);
-const Color kPink = Color(0xFF32E91E);
+const Color kPink = Color(0xFF000000);
 const Color kLightPink = Color(0xFF6A1935);
 const Color kOffWhite = Color(0xFFD5B9CA);
 // --- END OF COLOR PALETTE ---
@@ -76,7 +76,7 @@ class MyApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             backgroundColor: kPink, // Use our new pink
-            foregroundColor: Colors.yellow, // Text color
+            foregroundColor: Colors.white, // Text color
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12), // Rounded corners

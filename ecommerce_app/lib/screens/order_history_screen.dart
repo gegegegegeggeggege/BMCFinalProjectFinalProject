@@ -28,6 +28,7 @@ class OrderHistoryScreen extends StatelessWidget {
             .snapshots(),
 
         builder: (context, snapshot) {
+          print(snapshot.error);
           // 8. Handle loading state
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());
